@@ -106,10 +106,10 @@ Atualize a cada commit (troque ⬜ por ✅).
 
 | Grupo | Item | Prazo | Preenchido | Commit |
 |:--:|---|---|:--:|:--:|
-| 1 | Identificação | 16/11 | ⬜ | ⬜ |
-| 1 | Registros dos Ciclos 01, 02, 03 e 04 | 16/11 | ⬜ | ⬜ |
-| 1 | Campo 01 — Instrumento de entrada | 16/11 | ⬜ | ⬜ |
-| 1 | Campo 02 — Aprofundamento | 16/11 | ⬜ | ⬜ |
+| 1 | Identificação | 16/11 | ⬜ | OK |
+| 1 | Registros dos Ciclos 01, 02, 03 e 04 | 16/11 | ⬜ | OK |
+| 1 | Campo 01 — Instrumento de entrada | 16/11 | ⬜ | OK |
+| 1 | Campo 02 — Aprofundamento | 16/11 | ⬜ | OK|
 | 2 | Registros dos Ciclos 05, 06, 07 e 08 | 21/11 | ⬜ | ⬜ |
 | 2 | Checkpoint Conceitual | 21/11 | ⬜ | ⬜ |
 | 2 | Campo 03 — Execução e desvios | 21/11 | ⬜ | ⬜ |
@@ -213,19 +213,19 @@ Cada ciclo tem sua própria seção abaixo, já com o modelo. Se precisar de esp
 *Grupo 1 | Prazo segunda 16/11, 23h59 | SEM CONSULTA*
 
 **1a. Objetos de conhecimento identificados (mínimo 3, com vocabulário técnico):**
-1. _…_
-2. _…_
-3. _…_
-4. _…_ *(opcional)*
+1. Estruturas de dados compostas, combinando listas (list) para o armazenamento sequencial do catálogo e dicionários (dict) para representar os atributos individuais de cada música.
+2. Comandos de entrada, saída e tipagem básica em console utilizando input(), print() e conversões explícitas de tipo (float, int).
+3. Estruturas de controle condicional simples e compostas (if, elif, else) para validação de regras de negócio essenciais.
+
 
 **1b. Lacunas — o que não sei e preciso descobrir (mínimo 3, com precisão técnica):**
-1. _…_
-2. _…_
-3. _…_
+1. Como tratar exceções e entradas incorretas do usuário (como digitar texto em um campo numérico) para evitar falhas do tipo ValueError na execução.
+2. Como realizar buscas textuais parciais e case-insensitive em dicionários alocados dentro de listas utilizando list comprehensions.
+3. Como modularizar o código em funções independentes e implementar exclusão segura de elementos em listas por ID sem corromper a indexação.
 
 **1c. Hipótese inicial em até 5 linhas — com lógica da área de formação:**
 
-> _…_
+>O sistema apresenta falhas iniciais de robustez por processar dados brutos sem validação prévia de tipo ou consistência. A implementação de condicionais, blocos de tratamento de exceção e modularização garantirá que entradas inválidas sejam tratadas adequadamente, preservando a integridade do CRUD.
 
 ### 🧩 CAMPO 02 — Aprofundamento pós-aula
 *AV Qualis — Grupo 1 | Segunda 16/11, 23h59*
@@ -234,20 +234,20 @@ Cada ciclo tem sua própria seção abaixo, já com o modelo. Se precisar de esp
 
 **2a. Aprofundamento dos objetos de conhecimento (mínimo 2 referências com síntese da contribuição para a solução):**
 
-- **Referência 1:** _…_ — **Contribuição:** _…_
-- **Referência 2:** _…_ — **Contribuição:** _…_
+- **Referência 1:** _…_ — **Contribuição:** DOWNEY, Allen B. Pense em Python: Pense como um cientista da computação. São Paulo: Novatec, 2016. — Contribuição: Consolidou o entendimento sobre manipulação de dicionários, listas, loops e escopo de funções essenciais para a arquitetura do catálogo de músicas.
+- **Referência 2:** _…_ — **Contribuição:** Documentação Oficial Python: Built-in Exceptions. Disponível em: <docs.python.org>. — Contribuição: Orientou a construção de blocos try/except robustos para validar a conversão de durações e IDs numéricos inseridos pelo operador.
 
 **2b. Hipótese revisada — o que mudou em relação ao Campo 01 e por quê:**
 
-> _…_
+> Além da validação básica de campos vazios, verificou-se que a gestão completa de um CRUD com funções, busca textual refinada e operações de atualização/exclusão requer o uso de funções auxiliares de validação, controle estrito de IDs únicos e algoritmos recursivos para cálculos agregados.
 
 **2c. Dimensionamento inicial de recursos (recurso, quantidade estimada, justificativa técnica — mínimo 3 itens):**
 
 | RECURSO / MATERIAL / INSUMO | QUANTIDADE ESTIMADA | JUSTIFICATIVA TÉCNICA |
 |---|---|---|
-| _…_ | _…_ | _…_ |
-| _…_ | _…_ | _…_ |
-| _…_ | _…_ | _…_ |
+|Horas de desenvolvimento e testes|14 horas| Necessárias para codificar as funções de CRUD, validar laços e testar a recursividade.|
+|Casos de teste de validação | 6 cenários de entrada | Essenciais para cobrir inserções válidas, campos vazios, letras em campos numéricos e IDs inexistentes. |
+| Arquivos de script modularizado| 1 arquivo principal (main.py)|Suficiente para centralizar o menu de controle, laço while principal e as funções de manipulação de dados.|
 | _…_ | _…_ | _…_ |
 
 #### Registro do Ciclo 02 — 19/08
