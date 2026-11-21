@@ -182,13 +182,13 @@ Cada ciclo tem sua própria seção abaixo, já com o modelo. Se precisar de esp
 </details>
 
 #### Registro do Ciclo 01 — 12/08
-1. **Desafio do ciclo (em 1 frase):** _…_
-2. **O que implementei (commits / arquivos / links):** _…_
-3. **Objeto(s) de conhecimento mobilizado(s):** _…_
-4. **Desvio ou erro encontrado + causa técnica:** _…_
-5. **Decisão de ajuste + fonte:** _…_
-6. **Feedback recebido e o que mudei:** _…_
-7. **Próximo passo:** _…_
+1. **Desafio do ciclo (em 1 frase):** _Entender como guardar os dados básicos de uma música (título, artista e duração) usando variáveis e tipos corretos em Python._
+2. **O que implementei (commits / arquivos / links):** _Criei a estrutura inicial do arquivo main.py com as entradas via input() e exibição simples via print()._
+3. **Objeto(s) de conhecimento mobilizado(s):** _Variáveis, tipos primitivos (str, int, float) e comandos de entrada/saída (input(), print())_
+4. **Desvio ou erro encontrado + causa técnica:** _Tentei somar ou validar a duração da música logo após o input(), mas deu erro porque o input() sempre devolve texto (str) em vez de número (float)._
+5. **Decisão de ajuste + fonte:** _Converti a entrada de duração usando float() e adicionei .strip() para limpar espaços extras antes de processar (livro Pense em Python, cap. 2)._
+6. **Feedback recebido e o que mudei:** _Fui orientada a deixar as mensagens de input() mais claras para o usuário saber o formato esperado (ex: minutos)._
+7. **Próximo passo:** _Desenhar a lógica de decisão e aplicar operadores para validar se os campos não estão vazios._
 
 ## 🟢 CICLO 02 — 19/08 — Variáveis, tipos de dados e entrada/saída
 
@@ -270,13 +270,13 @@ Cada ciclo tem sua própria seção abaixo, já com o modelo. Se precisar de esp
 </details>
 
 #### Registro do Ciclo 03 — 26/08
-1. **Desafio do ciclo (em 1 frase):** _…_
-2. **O que implementei (commits / arquivos / links):** _…_
-3. **Objeto(s) de conhecimento mobilizado(s):** _…_
-4. **Desvio ou erro encontrado + causa técnica:** _…_
-5. **Decisão de ajuste + fonte:** _…_
-6. **Feedback recebido e o que mudei:** _…_
-7. **Próximo passo:** _…_
+1. **Desafio do ciclo (em 1 frase):** _Organizar o fluxo de cadastro e validação das músicas usando fluxogramas e operadores lógicos e relacionais._
+2. **O que implementei (commits / arquivos / links):** _Montei o fluxograma do cadastro e implementei as verificações iniciais de ID e campos obrigatórios no main.py._
+3. **Objeto(s) de conhecimento mobilizado(s):** _Operadores relacionais (==, !=, >), operadores lógicos (or, and) e construção de fluxogramas._
+4. **Desvio ou erro encontrado + causa técnica:** _Usei = (atribuição) em vez de == (comparação) dentro da verificação de texto vazio, gerando erro de sintaxe (SyntaxError)._
+5. **Decisão de ajuste + fonte:** _Corrigi para == e revisei o fluxograma para garantir que todo caminho inválido volte ao início sem travar (anotações de aula e Pense em Python, cap. 5)._
+6. **Feedback recebido e o que mudei:** _Um colega apontou que eu não tinha previsto o que acontece se a duração for zero ou negativa; adicionei a verificação duracao <= 0._
+7. **Próximo passo:** _Implementar as estruturas condicionais completas (if, elif, else) para as regras de negócio do catálogo._
 
 ## 🟢 CICLO 04 — 02/09 — Estruturas condicionais: `if`, `elif`, `else`
 
@@ -291,13 +291,13 @@ Cada ciclo tem sua própria seção abaixo, já com o modelo. Se precisar de esp
 </details>
 
 #### Registro do Ciclo 04 — 02/09
-1. **Desafio do ciclo (em 1 frase):** _…_
-2. **O que implementei (commits / arquivos / links):** _…_
-3. **Objeto(s) de conhecimento mobilizado(s):** _…_
-4. **Desvio ou erro encontrado + causa técnica:** _…_
-5. **Decisão de ajuste + fonte:** _…_
-6. **Feedback recebido e o que mudei:** _…_
-7. **Próximo passo:** _…_
+1. **Desafio do ciclo (em 1 frase):** _Conectar cada regra de negócio do Spotify Premium (campos obrigatórios e opções do menu) a estruturas condicionais._
+2. **O que implementei (commits / arquivos / links):** _Implementei o roteamento das opções do menu principal e as travas de validação no cadastro no commit do Ciclo 04._
+3. **Objeto(s) de conhecimento mobilizado(s):** _Estruturas condicionais (if, elif, else) e regras de validação de entrada._
+4. **Desvio ou erro encontrado + causa técnica:** _Quando o usuário digitava apenas espaços em branco no título, o if titulo == "" deixava passar como válido porque espaços contam como caracteres._
+5. **Decisão de ajuste + fonte:** _Passei a usar .strip() antes da condicional para remover espaços vazios nas pontas. Como previsto no Campo 02, validar texto vazio exigiu cuidado extra (Documentação Python: String Methods)._
+6. **Feedback recebido e o que mudei:** _O professor sugeriu centralizar as mensagens de erro com um padrão visual claro (❌ Erro:) para facilitar os testes._
+7. **Próximo passo:** _Combinar múltiplas regras de validação usando condicionais aninhadas e operadores lógicos._
 
 ---
 
@@ -345,8 +345,8 @@ Cada ciclo tem sua própria seção abaixo, já com o modelo. Se precisar de esp
 
 | | |
 |---|---|
-| **Nome do estudante** | _…_ |
-| **Data de realização** | _…_ |
+| **Nome do estudante** | _Maria Luiza Lelis Fróes_ |
+| **Data de realização** | _19/11/2026_ |
 | **Unidade curricular** | Algoritmos e Programação |
 | **Professor(a)** | Rondineli Seba Salomão |
 
@@ -357,21 +357,21 @@ Cada ciclo tem sua própria seção abaixo, já com o modelo. Se precisar de esp
 
 **RESPOSTA:**
 
-> _…_
+> _: Estruturas condicionais permitem que o programa tome decisões diferentes dependendo se uma expressão lógica é verdadeira ou falsa. No meu CRUD do Spotify Premium, uso condicionais combinadas com o operador or (if titulo == "" or artista == "") para impedir o cadastro de músicas incompletas, garantindo que nenhum dado corrompido entre na lista do catálogo._
 
 **QUESTÃO 2** — Objeto de conhecimento: _…_
 > _(Questão elaborada pelo professor na Proposta — Apêndice A, item 6)_
 
 **RESPOSTA:**
 
-> _…_
+> _O laço while repete um bloco enquanto uma condição for verdadeira, sendo ideal quando não sabemos quantas vezes o usuário vai usar o sistema (como no menu principal while True). Já o laço for percorre uma sequência com tamanho definido, sendo usado no meu CRUD para varrer item por item da lista de músicas na hora de listar ou buscar um artista._
 
 **QUESTÃO 3** — Objeto de conhecimento: _…_
 > _(Questão elaborada pelo professor na Proposta — Apêndice A, item 6)_
 
 **RESPOSTA:**
 
-> _…_
+> _Uma lista armazena vários itens em sequência ordenados por índice, enquanto um dicionário guarda dados no formato chave: valor. No meu projeto, cada música é um dicionário (com chaves como "id", "titulo" e "artista") guardado dentro de uma lista principal (catalogo_musicas), o que evita confundir índices numéricos e facilita buscar informações específicas de cada faixa._
 
 <details>
 <summary>🔒 Uso do professor — critérios de avaliação do Checkpoint</summary>
@@ -390,42 +390,42 @@ Cada ciclo tem sua própria seção abaixo, já com o modelo. Se precisar de esp
 *AV Qualis — Grupo 2 | Sábado 21/11, 23h59*
 
 **3a. O que descobri que mudou minha compreensão do problema (mínimo 2 achados, com objeto de conhecimento associado):**
-1. _…_ — *Objeto de conhecimento:* _…_
-2. _…_ — *Objeto de conhecimento:* _…_
+1. _…_ — *Objeto de conhecimento:* _Descobri que usar apenas listas simples (uma lista para títulos, outra para artistas) desorganiza os dados facilmente; juntar dicionários dentro de uma lista resolveu o vínculo de cada música. — Objeto de conhecimento: Listas e Dicionários (list e dict)._
+2. _…_ — *Objeto de conhecimento:* _Descobri que buscar textos digitados pelo usuário falha se ele escrever em letras maiúsculas ou minúsculas diferentes do cadastrado, sendo necessário padronizar tudo com .lower(). — Objeto de conhecimento: Manipulação de Strings e Laços de Repetição (for)._
 3. _…_ *(opcional)*
 
 **3b. Desvio em relação ao Campo 02 (ao menos 1 — causa técnica):**
-- **Desvio:** _…_
-- **Causa técnica:** _…_
+- **Desvio:** _No Campo 02 eu tinha planejado validar números apenas com condicionais simples e float(), mas o programa quebrava quando alguém digitava letras no campo de ID ou duração._
+- **Causa técnica:** _A tentativa de conversão direta com int() ou float() em uma string não numérica gera uma exceção ValueError em tempo de execução, encerrando o script antes de chegar no if._
 
 **3c. Decisão de ajuste (ao menos 1) com justificativa e fonte:**
-- **Decisão:** _…_
-- **Fonte:** _…_
+- **Decisão:** _Implementei a verificação .isdigit() antes de converter IDs para inteiro (na versão simples) e blocos try/except ValueError nas versões modularizadas para segurar o erro e pedir o dado novamente._
+- **Fonte:** _Aulas, pesquisas e livro Pense em Python._
 
-**Objeto de conhecimento mobilizado nesta decisão:** _…_
+**Objeto de conhecimento mobilizado nesta decisão:** _Validação de tipos, condicionais e tratamento de exceções._
 
 ### 🧩 CAMPO 04 — Interação com IA
 *AV Qualis — Grupo 2 | Sábado 21/11, 23h59 | OBRIGATÓRIO*
 
 > **Obrigatório e avaliado. Print sem análise crítica = devolução imediata. Reproduzir a IA sem questionamento = reprovado.**
 
-**4a. Ferramenta:** _…_  **Data:** _DD/MM/AAAA_
+**4a. Ferramenta:** _Gemini (Google)_  **Data:** _DD/MM/AAAA_
 
 **4b. Pergunta formulada (transcrita integralmente):**
 
-> _…_
+> _vou precisar que você reescreva os codigos  esse codigo que envei FEITO POR MIM, INICIANTE NA LIGUAGEM, melhorando a escrita a e ideia em alguma coisa, após feito coloque em baixo um feedback do que foi mudado para eu avaliar se estar igual ao meu codigo inicial ok? _
 
 **4c. Resposta da IA (resumida em parágrafo):**
 
-> _…_
+> _A IA reescreveu a estrutura do codigo inical , corrigiandop e auxiliando recursos como funções em while True, laços for, condicionais if/elif/else e listas de dicionários, além de usar .isdigit() para validar entradas numéricas, fuinção adcionada pela propia ia para o intuito de melhorar a estrutura._
 
 **4d. O que aceitei — com referência ao objeto de conhecimento do componente:**
 
-> _…_
+> _Aceitei as substituições feitas para melhora, além da estrutura de dicionários dentro de uma lista (catalogo_musicas), pois isso usa exatamente os objetos de conhecimento vistos em aula._
 
 **4e. O que questionei ou descartei — com argumento técnico ou fonte:**
 
-> _…_
+> _Na primeira resposta, a IA juntou todos os grupos em um código único e ainda sugeriu recursos fora do escopo inicial sem que pedisse, pois a ideia do codigo priemiro teria que vim de mim para que depois ela melhorasse e corrigisse a estrutura.
 
 ## 🟠 CICLO 05 — 09/09 — Condicionais aninhadas e operadores lógicos
 
@@ -440,13 +440,13 @@ Cada ciclo tem sua própria seção abaixo, já com o modelo. Se precisar de esp
 </details>
 
 #### Registro do Ciclo 05 — 09/09
-1. **Desafio do ciclo (em 1 frase):** _…_
-2. **O que implementei (commits / arquivos / links):** _…_
-3. **Objeto(s) de conhecimento mobilizado(s):** _…_
-4. **Desvio ou erro encontrado + causa técnica:** _…_
-5. **Decisão de ajuste + fonte:** _…_
-6. **Feedback recebido e o que mudei:** _…_
-7. **Próximo passo:** _…_
+1. **Desafio do ciclo (em 1 frase):** _Combinar múltiplas regras de validação no cadastro e na busca usando condicionais aninhadas e operadores lógicos._ 
+2. **O que implementei (commits / arquivos / links):** _Adicionei verificações combinadas para impedir cadastro sem título/artista e busca com termo vazio._
+3. **Objeto(s) de conhecimento mobilizado(s):** _Condicionais aninhadas (if dentro de else) e operadores lógicos (and, or, not)._
+4. **Desvio ou erro encontrado + causa técnica:** _Na busca, escrevi if termo in m['titulo'] or m['artista']:, o que sempre dava verdadeiro porque uma string não vazia em Python é avaliada como True._
+5. **Decisão de ajuste + fonte:** _Repeti a comparação completa dos dois lados do or (if termo in m['titulo'].lower() or termo in m['artista'].lower():_
+6. **Feedback recebido e o que mudei:** _Durante a revisão para a P1, percebi que faltava avisar o usuário quando a busca não encontrava nada; criei uma variável booleana encontrou = False para controlar a mensagem final._
+7. **Próximo passo:** _Implementar laços de repetição para manter o menu funcionando continuamente sem fechar o programa._
 
 ## 🟠 CICLO 06 — 30/09 — Devolutiva da P1 + repetição: `for`, `while`, `break`, `continue`
 
@@ -460,13 +460,13 @@ Cada ciclo tem sua própria seção abaixo, já com o modelo. Se precisar de esp
 </details>
 
 #### Registro do Ciclo 06 — 30/09
-1. **Desafio do ciclo (em 1 frase):** _…_
-2. **O que implementei (commits / arquivos / links):** _…_
-3. **Objeto(s) de conhecimento mobilizado(s):** _…_
-4. **Desvio ou erro encontrado + causa técnica:** _…_
-5. **Decisão de ajuste + fonte:** _…_
-6. **Feedback recebido (inclui devolutiva da P1) e o que mudei:** _…_
-7. **Próximo passo:** _…_
+1. **Desafio do ciclo (em 1 frase):** _Transformar o script de execução única em um sistema contínuo com menu interativo usando laços de repetição._
+2. **O que implementei (commits / arquivos / links):** _Envolvi o menu do Spotify Premium em um laço while True com opção de saída (break)._
+3. **Objeto(s) de conhecimento mobilizado(s):** _Laços de repetição (while, for) e controle de fluxo (break)._
+4. **Desvio ou erro encontrado + causa técnica:** _Esqueci de colocar o break na opção "0" (Sair), fazendo o programa entrar em loop infinito mesmo quando o usuário queria encerrar._
+5. **Decisão de ajuste + fonte:** _Adicionei o comando break dentro do elif opcao == "0": para interromper o while True com segurança (Documentação Python: More Control Flow Tools)._
+6. **Feedback recebido (inclui devolutiva da P1) e o que mudei:** _NÃO FOI ENTREGUE PROVA_
+7. **Próximo passo:** _
 
 ## 🟠 CICLO 07 — 07/10 — Listas: armazenamento e iteração
 
@@ -480,13 +480,13 @@ Cada ciclo tem sua própria seção abaixo, já com o modelo. Se precisar de esp
 </details>
 
 #### Registro do Ciclo 07 — 07/10
-1. **Desafio do ciclo (em 1 frase):** _…_
-2. **O que implementei (commits / arquivos / links):** _…_
-3. **Objeto(s) de conhecimento mobilizado(s):** _…_
-4. **Desvio ou erro encontrado + causa técnica:** _…_
-5. **Decisão de ajuste + fonte:** _…_
-6. **Feedback recebido e o que mudei:** _…_
-7. **Próximo passo:** _…_
+1. **Desafio do ciclo (em 1 frase):** _Armazenar múltiplas músicas em uma lista e percorrer os registros para listagem sem perder dados._
+2. **O que implementei (commits / arquivos / links):** _Implementei a lista catalogo_musicas = [], o método .append() para inserir e len() para verificar se o catálogo está vazio._ 
+3. **Objeto(s) de conhecimento mobilizado(s):** _Listas (list), métodos de inserção/remoção (.append(), .pop()), função len() e iteração com for._ 
+4. **Desvio ou erro encontrado + causa técnica:** _Tentei acessar catalogo_musicas[1] quando havia apenas 1 item cadastrado, gerando IndexError: list index out of range porque índices em Python começam em 0._
+5. **Decisão de ajuste + fonte:** _Passei a percorrer a lista diretamente com for m in catalogo_musicas: em vez de chutar índices fixos (Pense em Python, cap. 10)._ 
+6. **Feedback recebido e o que mudei:** _O professor recomendou sempre testar if len(catalogo_musicas) == 0: antes de tentar listar ou buscar, exibindo uma mensagem amigável._ 
+7. **Próximo passo:** _Trocar listas soltas por dicionários dentro da lista para organizar melhor os campos de cada música._
 
 ## 🟠 CICLO 08 — 14/10 — Busca/consulta e introdução a dicionários e matrizes
 
@@ -501,13 +501,13 @@ Cada ciclo tem sua própria seção abaixo, já com o modelo. Se precisar de esp
 </details>
 
 #### Registro do Ciclo 08 — 14/10
-1. **Desafio do ciclo (em 1 frase):** _…_
-2. **O que implementei (commits / arquivos / links):** _…_
-3. **Objeto(s) de conhecimento mobilizado(s):** _…_
-4. **Desvio ou erro encontrado + causa técnica:** _…_
-5. **Decisão de ajuste + fonte:** _…_
-6. **Feedback recebido e o que mudei:** _…_
-7. **Próximo passo:** _…_
+1. **Desafio do ciclo (em 1 frase):** _Estruturar cada música como um dicionário (chave: valor) e implementar a busca textual por título ou artista._
+2. **O que implementei (commits / arquivos / links):** _Modelei cada música com as chaves "id", "titulo", "artista" e "duracao", e implementei a busca ignorando maiúsculas/minúsculas._
+3. **Objeto(s) de conhecimento mobilizado(s):** _Dicionários (dict), acesso por chaves, listas de dicionários e comparação de strings com .lower()_
+4. **Desvio ou erro encontrado + causa técnica:** _A busca pelo ID falhava porque eu comparava o ID digitado no input() (tipo str, ex: "1") direto com o ID guardado no dicionário (tipo int, ex: 1), e "1" == 1 retorna False._
+5. **Decisão de ajuste + fonte:** _Converti a entrada do ID para int() antes de comparar com m["id"] (Pense em Python, cap. 11)._
+6. **Feedback recebido e o que mudei:** _Minha dupla de revisão sugeriu permitir a busca parcial (termo in m["titulo"].lower()) em vez de exigir o nome exato da música (==), o que melhorou muito o uso._
+7. **Próximo passo:** _Implementar as operações de atualização (Update) e exclusão (Delete) para fechar o CRUD completo._
 
 ---
 
@@ -544,13 +544,13 @@ Cada ciclo tem sua própria seção abaixo, já com o modelo. Se precisar de esp
 </details>
 
 #### Registro do Ciclo 09 — 21/10
-1. **Desafio do ciclo (em 1 frase):** _…_
-2. **O que implementei (commits / arquivos / links):** _…_
-3. **Objeto(s) de conhecimento mobilizado(s):** _…_
-4. **Desvio ou erro encontrado + causa técnica:** _…_
-5. **Decisão de ajuste + fonte:** _…_
-6. **Feedback recebido e o que mudei:** _…_
-7. **Próximo passo:** _…_
+1. **Desafio do ciclo (em 1 frase):** _Completar o ciclo CRUD implementando a atualização e a exclusão segura de músicas por ID sem quebrar a lista._
+2. **O que implementei (commits / arquivos / links):** _Adicionei as opções 4 (Atualizar) e 5 (Excluir) no main.py, localizando o índice pelo ID antes de remover._
+3. **Objeto(s) de conhecimento mobilizado(s):** _Manipulação de dicionários (alteração de valores por chave) e remoção segura em listas por índice (.pop(indice))._
+4. **Desvio ou erro encontrado + causa técnica:** _Ao tentar excluir usando catalogo_musicas.remove(m) dentro do próprio for m in catalogo_musicas:, a lista mudou de tamanho durante a iteração e pulou o elemento seguinte._
+5. **Decisão de ajuste + fonte:** _Primeiro percorro a lista para descobrir o índice (indice_remover) e, somente depois que o for termina, executo catalogo_musicas.pop(indice_remover) (Pense em Python, cap. 10)._
+6. **Feedback recebido e o que mudei:** _Na revisão por pares com a Licia Coimbra, ajustei a atualização para que, se o usuário apertar Enter em branco, o valor antigo seja mantido em vez de apagar o dado._
+7. **Próximo passo:** _Organizar o código dividindo cada funcionalidade em funções separadas (modularização)._
 
 ### 🧩 CAMPO 05 — Registro de Revisão por Pares
 *Adaptação do **Logbook do Time** (Apêndice C) para o CRUD individual. Documento atualizado pelo **revisor**. Cada decisão técnica relevante deve ter associado o objeto de conhecimento correspondente.*
@@ -563,9 +563,9 @@ Cada ciclo tem sua própria seção abaixo, já com o modelo. Se precisar de esp
 
 | | |
 |---|---|
-| **Autor do CRUD revisado** | _nome_ |
+| **Autor do CRUD revisado** | _Licia Coimbra_ |
 | **Repositório revisado** | _link_ |
-| **Revisor** | _seu nome_ |
+| **Revisor** | _Maria Luiza Lelis Froes_ |
 | **Unidade curricular / Semestre** | Algoritmos e Programação · 2026.2 |
 | **Ciclo / data** | _Ciclo 09 · 21/10_ |
 
@@ -573,37 +573,37 @@ Cada ciclo tem sua própria seção abaixo, já com o modelo. Se precisar de esp
 
 | ETAPA DO PROCESSO | RESPONSÁVEL | PRAZO | STATUS | DESVIO / JUSTIFICATIVA |
 |---|---|---|---|---|
-| 1. _…_ | Revisor / Autor | _DD/MM_ | ☐ Concluída ☐ Em andamento ☐ Com desvio | _…_ |
-| 2. _…_ | Revisor / Autor | _DD/MM_ | ☐ Concluída ☐ Em andamento ☐ Com desvio | _…_ |
-| 3. _…_ | Revisor / Autor | _DD/MM_ | ☐ Concluída ☐ Em andamento ☐ Com desvio | _…_ |
-| 4. _…_ | Revisor / Autor | _DD/MM_ | ☐ Concluída ☐ Em andamento ☐ Com desvio | _…_ |
-| 5. _…_ | Revisor / Autor | _DD/MM_ | ☐ Concluída ☐ Em andamento ☐ Com desvio | _…_ |
+| 11. Clonar/abrir o código do CRUD da dupla	Revisor	21/10	☑ Concluída	Sem desvios; código acessível e legível.
+2. Testar fluxo de Cadastro e Listagem (Create/Read)	Revisor	21/10	☑ Concluída	Cadastro funcionando corretamente com listas e dicionários.
+3. Testar atualização e exclusão (Update/Delete)	Revisor	21/10	☑ Concluída	Identificado comportamento ao tentar excluir ID inexistente.
+4. Ler o código-fonte e verificar estruturas	Revisor	21/10	☑ Concluída	Verificado uso correto de laços for e condicionais.
+5. Registrar achados e devolver feedback ao Autor	Revisor / Autor	21/10	☑ Concluída	Feedback entregue via GitHub/sala para ajuste da mensagem de ID inválido.
 
 **5b. ANÁLISE DE INSUMOS E CRITÉRIOS DE QUALIDADE:**
 
 | RECURSO | QTDE PLANEJADA | QTDE UTILIZADA | VARIAÇÃO | JUSTIFICATIVA TÉCNICA |
 |---|---|---|---|---|
-| _…_ | _…_ | _…_ | _…_ | _…_ |
-| _…_ | _…_ | _…_ | _…_ | _…_ |
-| _…_ | _…_ | _…_ | _…_ | _…_ |
+| _Casos de teste manuais (CRUD)_ | _5 cenários_ | _5 cenários_ | _0_ | _Cobriram criação, leitura, busca, atualização e exclusão._ |
+| _Entradas inválidas (ID inexistente/vazio)_ | _3 testes_ | _3 testes_ | _+1_ | _Foi necessário testar um caso extra de exclusão com lista vazia._ |
+| _Arquivo principal do colega (main.py)_ | _1 arquivo_ | _1 arquivo_ | _0_ | _Suficiente para auditar toda a lógica implementada até o Ciclo 09._ |
 
 **5c. CONTROLE DE QUALIDADE:**
-- **Critério ou norma técnica:** _…_
-- **A solução atende?** ☐ Sim ☐ Parcialmente ☐ Não
+- **Critério ou norma técnica:** _O CRUD deve executar as 4 operações básicas (Create, Read, Update, Delete) sem encerrar abruptamente ao buscar ou excluir um ID inexistente._
+- **A solução atende?** ☑ Parcialmente (Atendia ao fluxo normal, mas precisava de aviso claro quando o ID não era encontrado na exclusão).
 
 **5d. GESTÃO DE RISCOS:**
-- **Risco:** _…_
-- **Estratégia de mitigação:** _…_
+- **Risco:** _Diferença de versão do Python ou falta de dados pré-cadastrados dificultar a reprodução dos testes de exclusão._
+- **Estratégia de mitigação:** _Criar um roteiro padrão de 3 cadastros iniciais antes de rodar os testes de atualização e exclusão._
 
 **5e. RASTREABILIDADE DAS DECISÕES TÉCNICAS — COM VÍNCULO AO CONTEÚDO:**
 
 | DATA | DECISÃO TÉCNICA | RESP. | OBJETO DE CONHECIMENTO MOBILIZADO | FUNDAMENTAÇÃO / REFERÊNCIA |
 |---|---|---|---|---|
-| _DD/MM/AA_ | _…_ | _…_ | _…_ | _…_ |
-| _DD/MM/AA_ | _…_ | _…_ | _…_ | _…_ |
-| _DD/MM/AA_ | _…_ | _…_ | _…_ | _…_ |
-| _DD/MM/AA_ | _…_ | _…_ | _…_ | _…_ |
-| _DD/MM/AA_ | _…_ | _…_ | _…_ | _…_ |
+| _21/10/26_ | _Validar se a lista está vazia antes de pedir ID na exclusão_ | _Revisor_ | _Estruturas condicionais (if) e função len()_ | _Pense em Python, cap. 10 (Listas)._ |
+| _21/10/26_ | _Evitar remoção direta dentro do laço for_ | _Revisor_ | _Estruturas condicionais (if) e função len()_ | _Documentação Oficial Python (Data Structures)._ |
+| _21/10/26_ | _Padronizar busca textual com .lower()_ | _Autor_ | _Autor_ | _Iteração e mutabilidade de listas (.pop())_ |
+| _21/10/26_ | _Manter valor original se o input de edição vier vazio_ | _Autor_ | _Métodos de String e operadores lógicos_ | _Estruturas condicionais (if campo != "")_ |
+| _21/10/26_ | _Exibir feedback visual quando ID não é localizado_ | _Revisor_ | _Variáveis de controle (flags booleanas/índice -1)_ | _Anotações de aula — Ciclo 09 (CRUD completo)._ |
 
 > **IMPORTANTE:** Decisão registrada sem objeto de conhecimento associado e sem referência é considerada **não rastreável** e não conta para a avaliação formativa. O vínculo entre processo e conteúdo é obrigatório em todas as decisões relevantes.
 
@@ -619,15 +619,16 @@ Cada ciclo tem sua própria seção abaixo, já com o modelo. Se precisar de esp
 </details>
 
 #### Registro do Ciclo 10 — 28/10
-1. **Desafio do ciclo (em 1 frase):** _…_
-2. **O que implementei (commits / arquivos / links):** _…_
-3. **Objeto(s) de conhecimento mobilizado(s):** _…_
-4. **Desvio ou erro encontrado + causa técnica:** _…_
-5. **Decisão de ajuste + fonte:** _…_
-6. **Feedback recebido e o que mudei:** _…_
-7. **Próximo passo:** _…_
+1. **Desafio do ciclo (em 1 frase):** _Refatorar o código linear separando cada operação do CRUD em funções independentes para melhorar a organização._
+2. **O que implementei (commits / arquivos / links):** _Criei as funções exibir_menu(), cadastrar_musica(), listar_musicas(), buscar_musica(), atualizar_musica(), excluir_musica() e main()._
+3. **Objeto(s) de conhecimento mobilizado(s):** _Modularização, definição de funções (def), passagem de parâmetros (catalogo), escopo de variáveis e retorno (return)._
+4. **Desvio ou erro encontrado + causa técnica:** _Criei a função buscar_indice_por_id() mas esqueci de colocar return -1 no final; quando o ID não existia, a função retornava None em vez de -1, quebrando o if indice == -1:._
+5. **Decisão de ajuste + fonte:** _Criei a função buscar_indice_por_id() mas esqueci de colocar return -1 no final; quando o ID não existia, a função retornava None em vez de -1, quebrando o if indice == -1:._
+6. **Feedback recebido e o que mudei:** _Na revisão entre pares, apontaram que o código ficou muito mais fácil de ler e dar manutenção comparado ao bloco único do Ciclo 09._
+7. **Próximo passo:** _Implementar uma função recursiva para calcular a duração total das músicas cadastradas._
 
 ## 🔵 CICLO 11 — 04/11 — Recursividade
+
 
 <details>
 <summary>📘 Orientações do Ciclo 11 — Registro + Campo 06 (Grupo 3)</summary>
@@ -641,35 +642,35 @@ Cada ciclo tem sua própria seção abaixo, já com o modelo. Se precisar de esp
 </details>
 
 #### Registro do Ciclo 11 — 04/11
-1. **Desafio do ciclo (em 1 frase):** _…_
-2. **O que implementei (commits / arquivos / links):** _…_
-3. **Objeto(s) de conhecimento mobilizado(s):** _…_
-4. **Desvio ou erro encontrado + causa técnica:** _…_
-5. **Decisão de ajuste + fonte:** _…_
-6. **Feedback recebido e o que mudei:** _…_
-7. **Próximo passo:** _…_
+1. **Desafio do ciclo (em 1 frase):** _Criar uma função recursiva para somar a duração de todas as músicas do catálogo sem usar laços tradicionais._
+2. **O que implementei (commits / arquivos / links):** _Implementei a função calcular_duracao_total_recursiva(catalogo, indice=0) e a opção 6 no menu principal._
+3. **Objeto(s) de conhecimento mobilizado(s):** _Recursividade, caso base (condição de parada) e chamada recursiva com incremento de índice._
+4. **Desvio ou erro encontrado + causa técnica:** _Na primeira tentativa, esqueci de incrementar o índice (indice + 1) na chamada recursiva, causando RecursionError: maximum recursion depth exceeded (loop infinito na pilha)._
+5. **Decisão de ajuste + fonte:** _Defini o caso base if indice >= len(catalogo): return 0.0 e passei indice + 1 na chamada recursiva (Pense em Python, cap. 5 — Recursividade)._
+6. **Feedback recebido e o que mudei:** _O professor reforçou a importância de explicar claramente qual é o caso base durante a apresentação para provar domínio da pilha de execução._
+7. **Próximo passo:** _Preparar a arguição para a Defesa Técnica (Campo 06) e realizar a refatoração final._
 
 ### 🧩 CAMPO 06 — Próximos passos para a defesa
 *AV Qualis — Grupo 3 | Individual | Quinta 26/11, 23h59*
 
 **6a. Decisão técnica que defendo com plena autonomia — o que aprendi que é exclusivamente meu e não consigo transferir para nenhum colega:**
 
-> _…_
+> _Decidi separar a busca do índice por ID (buscar_indice_por_id) da operação de exclusão/atualização e validar entradas numéricas antes da conversão de tipo. Essa estrutura foi pensada por mim para evitar que o catálogo fosse modificado enquanto era percorrido e para garantir que nenhum erro de digitação do usuário derrubasse o sistema durante a execução._
 
 **6b. Lacuna técnica e plano de ação para saná-la:**
 
-- **Lacuna:** _…_
-- **Plano de ação (passos e datas):** _…_
+- **Lacuna:** _Os dados do catálogo ainda ficam apenas na memória RAM (listas e dicionários) e somem quando o programa é fechado, além de eu precisar aprofundar a persistência em arquivos._
+- **Plano de ação (passos e datas):** _Revisar manipulação básica de listas, dicionários e condicionais até 17/11; 2) Testar todos os cenários de erro do CRUD no terminal antes da defesa em 18/11; 3) Estudar leitura e escrita de arquivos .txt/.json após a entrega final (27/11)._
 
 **6c. Pergunta que a banca pode fazer — com resposta fundamentada (mínimo 5 linhas):**
 
-- **Pergunta:** _…_
+- **Pergunta:** _Por que você optou por armazenar cada música como um dicionário dentro de uma lista e como você garante que a exclusão de um item pelo ID não cause erro de índice no programa?_
 - **Resposta:**
 
-> _…_
+> _Optei por combinar listas e dicionários porque a lista permite armazenar uma coleção dinâmica de músicas em sequência, enquanto o dicionário organiza os atributos de cada música por chaves nomeadas ("id", "titulo", "artista", "duracao"), evitando o risco de confundir posições numéricas como ocorreria em listas aninhadas. Para realizar a exclusão com segurança, não removo o elemento diretamente dentro do laço for que percorre o catálogo, pois alterar o tamanho da lista durante a iteração faz com que índices sejam pulados ou gerem IndexError. Em vez disso, primeiro percorro a lista para encontrar a posição exata correspondente ao ID digitado e, somente após encerrar a busca, utilizo o método .pop(indice) para remover o registro com precisão._
 
-**Objeto de conhecimento mobilizado:** _…_
-**Fonte:** _…_
+**Objeto de conhecimento mobilizado:** _Estruturas de dados compostas (list e dict), iteração e mutabilidade de listas._
+**Fonte:** _DOWNEY, Allen B. Pense em Python (cap. 10 e 11) e Documentação Oficial Python (Data Structures)._
 
 ## 🔵 CICLO 12 — 11/11 — Refatoração e qualidade de código
 
@@ -687,13 +688,13 @@ Cada ciclo tem sua própria seção abaixo, já com o modelo. Se precisar de esp
 </details>
 
 #### Registro do Ciclo 12 — 11/11
-1. **Desafio do ciclo (em 1 frase):** _…_
-2. **O que implementei (commits / arquivos / links):** _…_
-3. **Objeto(s) de conhecimento mobilizado(s):** _…_
-4. **Desvio ou erro encontrado + causa técnica:** _…_
-5. **Decisão de ajuste + fonte:** _…_
-6. **Feedback recebido e o que mudei:** _…_
-7. **Próximo passo:** _…_
+1. **Desafio do ciclo (em 1 frase):** _Refatorar o código final eliminando duplicações de validação e melhorando a legibilidade dos nomes de variáveis e funções._
+2. **O que implementei (commits / arquivos / links):** _Extraí a validação repetida de duração para a função auxiliar ler_duracao_valida() e padronizei as mensagens de saída._
+3. **Objeto(s) de conhecimento mobilizado(s):** _Refatoração, princípio DRY (Don't Repeat Yourself), qualidade de código e tratamento de exceções (try/except)._
+4. **Desvio ou erro encontrado + causa técnica:** _Havia código duplicado de validação de float no cadastro e na atualização, e na atualização um valor negativo era aceito sem aviso claro._
+5. **Decisão de ajuste + fonte:** _Centralizei a leitura validada de números positivos e mantive o código limpo, sem comentários óbvios (livro Código Limpo / orientações do Ciclo 12)._
+6. **Feedback recebido e o que mudei:** _Na segunda revisão por pares com a Licia Coimbra, testamos entradas vazias e letras nos campos numéricos; tudo respondeu com mensagens claras sem travar._
+7. **Próximo passo:** _Finalizar a segunda revisão por pares (Campo 05) e consolidar a evolução conceitual no Campo 07._
 
 ### 🧩 CAMPO 05 — Registro de Revisão por Pares (revisão nº 2)
 
@@ -701,44 +702,43 @@ Cada ciclo tem sua própria seção abaixo, já com o modelo. Se precisar de esp
 |---|---|
 | **Autor do CRUD revisado** | _nome_ |
 | **Repositório revisado** | _link_ |
-| **Revisor** | _seu nome_ |
+| **Revisor** | _Maria Luiza Lelis Froes|_ |
 | **Ciclo / data** | _Ciclo 12 · 11/11_ |
 
 **5a. AVANÇO DO PROCESSO DE REVISÃO:**
 
 | ETAPA DO PROCESSO | RESPONSÁVEL | PRAZO | STATUS | DESVIO / JUSTIFICATIVA |
 |---|---|---|---|---|
-| 1. _…_ | Revisor / Autor | _DD/MM_ | ☐ Concluída ☐ Em andamento ☐ Com desvio | _…_ |
-| 2. _…_ | Revisor / Autor | _DD/MM_ | ☐ Concluída ☐ Em andamento ☐ Com desvio | _…_ |
-| 3. _…_ | Revisor / Autor | _DD/MM_ | ☐ Concluída ☐ Em andamento ☐ Com desvio | _…_ |
-| 4. _…_ | Revisor / Autor | _DD/MM_ | ☐ Concluída ☐ Em andamento ☐ Com desvio | _…_ |
-| 5. _…_ | Revisor / Autor | _DD/MM_ | ☐ Concluída ☐ Em andamento ☐ Com desvio | _…_ |
+| 1. _…_ | Revisor  | _11/11_ | ☑ Concluída | _A validação de ID inexistente na exclusão foi devidamente corrigida._ |
+| 2. _…_ | Revisor  | _11/11_ | ☑ Concluída | _O sistema resistiu às entradas inválidas sem gerar ValueError._ |
+| 3. _…_ | Revisor  | _11/11_ | ☑ Concluída| _Código organizado em funções pequenas e legíveis._ |
+| 4. _…_ | Revisor  | _11/11_ | ☑ Concluída | _Caso base funcionando mesmo quando a lista está vazia (retorna 0)._ |
+| 5. _…_ | Revisor / Autor | _11/11_ | ☑ Concluída| _Aprovado para a entrega final do Grupo 3._ |
 
 **5b. ANÁLISE DE INSUMOS E CRITÉRIOS DE QUALIDADE:**
 
 | RECURSO | QTDE PLANEJADA | QTDE UTILIZADA | VARIAÇÃO | JUSTIFICATIVA TÉCNICA |
 |---|---|---|---|---|
-| _…_ | _…_ | _…_ | _…_ | _…_ |
-| _…_ | _…_ | _…_ | _…_ | _…_ |
-| _…_ | _…_ | _…_ | _…_ | _…_ |
+| _Casos de teste de estresse (entradas inválidas)_ | _6 cenários_ | _6 cenários_ | _0_ | _Testados textos vazios, espaços, letras em ID, números negativos e lista vazia._ |
+| _Checklist de qualidade de código (refatoração)_ | _4 critérios_ | _4 critérios_ | _0_ | _Verificados: ausência de código duplicado, nomes claros, funções coesas e tratamento de erros._ |
+| _Repositório GitHub atualizado_ | _1 repositório_ | _1 repositório_ | _0_ | _Histórico de commits coerente com a evolução dos ciclos._ |
 
 **5c. CONTROLE DE QUALIDADE:**
-- **Critério ou norma técnica:** _…_
-- **A solução atende?** ☐ Sim ☐ Parcialmente ☐ Não
-
+- **Critério ou norma técnica:** _O código deve estar modularizado em funções coesas, sem repetição de lógica, e resistir a entradas inválidas ou vazias sem quebrar em tempo de execução._
+- **A solução atende?** ☑ Sim
 **5d. GESTÃO DE RISCOS:**
-- **Risco:** _…_
-- **Estratégia de mitigação:** _…_
+- **Risco:** _Alguma refatoração de última hora quebrar uma funcionalidade que já funcionava antes (regressão)._
+- **Estratégia de mitigação:** _Executar novamente todo o fluxo completo (Create → Read → Search → Update → Delete → Recursão) após cada alteração no código._
 
 **5e. RASTREABILIDADE DAS DECISÕES TÉCNICAS — COM VÍNCULO AO CONTEÚDO:**
 
 | DATA | DECISÃO TÉCNICA | RESP. | OBJETO DE CONHECIMENTO MOBILIZADO | FUNDAMENTAÇÃO / REFERÊNCIA |
 |---|---|---|---|---|
-| _DD/MM/AA_ | _…_ | _…_ | _…_ | _…_ |
-| _DD/MM/AA_ | _…_ | _…_ | _…_ | _…_ |
-| _DD/MM/AA_ | _…_ | _…_ | _…_ | _…_ |
-| _DD/MM/AA_ | _…_ | _…_ | _…_ | _…_ |
-| _DD/MM/AA_ | _…_ | _…_ | _…_ | _…_ |
+| _11/11/26_ | _Extrair validação numérica para função reutilizável_ | _Autor_ | _Modularização e funções com retorno (def / return)_ | _Pense em Python, cap. 3 e 6._ |
+| _11/11/26_ | _Proteger conversões numéricas contra letras_ | _Autor_ | _Tratamento de exceções (try/except ValueError) ou .isdigit()_ | _Documentação Oficial Python (Built-in Exceptions)._ |
+| _11/11/26_ | _Garantir caso base para lista vazia na recursividade_ | _Revisor_ | _Recursividade e condição de parada_ | _Pense em Python, cap. 5._ |
+| _11/11/26_ | _Remover código duplicado nas mensagens de menu_ | _Autor_ | _Qualidade de código e refatoração (DRY)_ | _Material de aula — Ciclo 12 (Refatoração)._ |
+| _11/11/26_ | _Validar fluxo completo após refatoração (teste de regressão)_ | _Revisor_ | _Testes funcionais e lógica de controle_ | _Boas práticas de engenharia de software / Ciclo 12._ |
 
 ### 🧩 CAMPO 07 — Evolução conceitual
 *AV Qualis — Grupo 3 | Individual | Quinta 26/11, 23h59*
@@ -747,30 +747,30 @@ Cada ciclo tem sua própria seção abaixo, já com o modelo. Se precisar de esp
 
 **7a. O que eu pensava no início do ciclo (com base no Campo 01 — registrar a hipótese inicial e os objetos de conhecimento que achava conhecer):**
 
-> _…_
+> _No início (Campo 01), eu achava que bastava usar input(), print() e alguns if/else simples para o sistema funcionar, e minha hipótese era que apenas checar campos vazios já resolveria os problemas de robustez. Eu ainda não sabia como lidar com erros de tipo (ValueError) quando o usuário digitasse texto no lugar de número, nem como fazer buscas parciais ou excluir itens de uma lista sem bagunçar os índices._
 
 **7b. O que aprendi — conceitos, princípios ou relações técnicas que não dominava no início e que agora consigo explicar com precisão (mínimo 3 objetos de conhecimento):**
 
 | OBJETO DE CONHECIMENTO | O QUE EU NÃO DOMINAVA | O QUE APRENDI E CONSIGO DEMONSTRAR | EVIDÊNCIA (campo do Logbook onde aparece) |
-|---|---|---|---|
-| _…_ | _…_ | _…_ | _…_ |
-| _…_ | _…_ | _…_ | _…_ |
-| _…_ | _…_ | _…_ | _…_ |
+|OBJETO DE CONHECIMENTO|O QUE EU NÃO DOMINAVA|O QUE APRENDI E CONSIGO DEMONSTRAR|---|
+| _Listas e Dicionários (list e dict)_ | _Não sabia como relacionar vários atributos de uma mesma música sem criar listas separadas que se desorganizavam._ | _Aprendi a modelar cada registro como um dicionário (chave: valor) dentro de uma lista principal, facilitando buscas e atualizações por ID._ | _Campo 01, Ciclo 07, Ciclo 08 e Campo 06 (6c)._ |
+| _Laços de Repetição e Mutabilidade (for, while, .pop())_ | _Não sabia manter o menu rodando continuamente nem por que excluir um item durante um for fazia o programa pular registros._ | _Aprendi a controlar o fluxo com while True e a localizar primeiro o índice alvo para só depois excluir com .pop(indice) com segurança._ | _Ciclo 06, Ciclo 09 e Campo 05 (Revisão nº 1)._ |
+| _Modularização, Exceções e Recursividade (def, try/except)_ | _Não sabia dividir um código grande em partes menores, nem impedir o programa de travar ao digitar letras em campos numéricos._ | _Aprendi a criar funções independentes para cada operação do CRUD, validar tipos numéricos com segurança e construir função recursiva com caso base._ | _Campo 03 (3b), Ciclo 10, Ciclo 11 e Ciclo 12._ |
 
 **7c. Conceitos que precisei corrigir ao longo do ciclo — onde eu estava equivocado e o que o corrigiu (Fechamento Teórico, pesquisa, Peer Review, arguição):**
 
-1. **Equívoco:** _…_ — **Correção:** _…_
-   **O que corrigiu:** _…_
-2. **Equívoco:** _…_ — **Correção:** _…_
+1. **Equívoco:** _Eu achava que comparar if termo in m['titulo'] or m['artista']: verificava o termo nos dois campos, e também confundia str com int na busca por ID ("1" == 1)._
+   **O que corrigiu:** _Entendi que cada lado do or precisa da comparação completa e que dados vindos do input() sempre nascem como texto (str), precisando ser convertidos antes de comparar com inteiros.O que corrigiu: Testes práticos no terminal, leitura do livro Pense em Python e registros dos Ciclos 05 e 08._
+2. **Equívoco:** _Eu achava que podia remover um elemento da lista diretamente dentro do laço for que a estava percorrendo._ — **Correção:** _Aprendi que alterar o tamanho da lista durante a iteração desloca os índices internos; o correto é buscar o índice primeiro e usar .pop(indice) fora do laço.O que corrigiu: Revisão por pares (Peer Review no Ciclo 09) e documentação oficial do Python._
    **O que corrigiu:** _…_
 
 **7d. Transferência — como este aprendizado se aplica a um contexto diferente do problema trabalhado (ao menos 1 exemplo concreto da área de formação):**
 
-> _…_
+> _Toda a lógica construída neste CRUD de músicas pode ser transferida diretamente para um sistema de controle de estoque ou cadastro de pacientes/clientes. A estrutura de armazenar registros em dicionários dentro de uma lista, validar entradas antes de salvar, buscar por termos parciais e atualizar/excluir por um identificador único (ID ou código de barras) funciona exatamente da mesma forma em qualquer sistema de gestão comercial ou administrativa._
 
 **7e. Avaliação honesta do próprio percurso — o que ainda não domino e preciso aprofundar após este ciclo:**
 
-> _…_
+> _Ainda não domino o armazenamento permanente de dados (persistência em arquivos .json, .csv ou bancos de dados SQL), pois no meu projeto atual todos os cadastros são perdidos quando o programa é encerrado. Também quero aprofundar Programação Orientada a Objetos (POO) no próximo módulo para estruturar entidades como Musica e Playlist de forma ainda mais profissional._
 
 ---
 
@@ -835,7 +835,7 @@ Cada ciclo tem sua própria seção abaixo, já com o modelo. Se precisar de esp
 **Professor(a):** _________________  **Data:** ___________
 </details>
 
-### Registro do Encerramento — 18/11
+### Registro do Encerramento — 25/11
 1. **O que apresentei/defendi (em 1 frase):** _…_
 2. **Objeto(s) de conhecimento que a banca mais explorou:** _…_
 3. **Pergunta que mais me desafiou e como respondi:** _…_
