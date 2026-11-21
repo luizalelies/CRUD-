@@ -619,13 +619,13 @@ Cada ciclo tem sua própria seção abaixo, já com o modelo. Se precisar de esp
 </details>
 
 #### Registro do Ciclo 10 — 28/10
-1. **Desafio do ciclo (em 1 frase):** _Refatorar o código linear separando cada operação do CRUD em funções independentes para melhorar a organização._
-2. **O que implementei (commits / arquivos / links):** _Criei as funções exibir_menu(), cadastrar_musica(), listar_musicas(), buscar_musica(), atualizar_musica(), excluir_musica() e main()._
-3. **Objeto(s) de conhecimento mobilizado(s):** _Modularização, definição de funções (def), passagem de parâmetros (catalogo), escopo de variáveis e retorno (return)._
-4. **Desvio ou erro encontrado + causa técnica:** _Criei a função buscar_indice_por_id() mas esqueci de colocar return -1 no final; quando o ID não existia, a função retornava None em vez de -1, quebrando o if indice == -1:._
-5. **Decisão de ajuste + fonte:** _Criei a função buscar_indice_por_id() mas esqueci de colocar return -1 no final; quando o ID não existia, a função retornava None em vez de -1, quebrando o if indice == -1:._
-6. **Feedback recebido e o que mudei:** _Na revisão entre pares, apontaram que o código ficou muito mais fácil de ler e dar manutenção comparado ao bloco único do Ciclo 09._
-7. **Próximo passo:** _Implementar uma função recursiva para calcular a duração total das músicas cadastradas._
+1. **Desafio do ciclo (em 1 frase):** _Organizar o menu de opções e as rotinas do CRUD mantendo todo o fluxo integrado dentro de um laço principal._
+2. **O que implementei (commits / arquivos / links):** _Estruturei todas as opções do menu (cadastro, listagem, busca, atualização e exclusão) utilizando condicionais elif encadeadas._
+3. **Objeto(s) de conhecimento mobilizado(s):** _Estruturas de controle de fluxo e ramificações condicionais (if, elif, else)._
+4. **Desvio ou erro encontrado + causa técnica:** _Algumas opções do menu executavam ações duplicadas porque as condições dos elif sobrepunham-se._
+5. **Decisão de ajuste + fonte:** _Organizei a ordem lógica das verificações e isolei cada opção com checagens estritas de string_
+6. **Feedback recebido e o que mudei:** _Um colega sugeriu manter a estrutura direta para facilitar a leitura visual de quem está a começar na programação._
+7. **Próximo passo:** _Aprimorar a validação de dados numéricos (como IDs) sem quebrar o programa._
 
 ## 🔵 CICLO 11 — 04/11 — Recursividade
 
@@ -642,13 +642,13 @@ Cada ciclo tem sua própria seção abaixo, já com o modelo. Se precisar de esp
 </details>
 
 #### Registro do Ciclo 11 — 04/11
-1. **Desafio do ciclo (em 1 frase):** _Criar uma função recursiva para somar a duração de todas as músicas do catálogo sem usar laços tradicionais._
-2. **O que implementei (commits / arquivos / links):** _Implementei a função calcular_duracao_total_recursiva(catalogo, indice=0) e a opção 6 no menu principal._
-3. **Objeto(s) de conhecimento mobilizado(s):** _Recursividade, caso base (condição de parada) e chamada recursiva com incremento de índice._
-4. **Desvio ou erro encontrado + causa técnica:** _Na primeira tentativa, esqueci de incrementar o índice (indice + 1) na chamada recursiva, causando RecursionError: maximum recursion depth exceeded (loop infinito na pilha)._
+1. **Desafio do ciclo (em 1 frase):** _Validar entradas numéricas de forma segura utilizando métodos de string integrados do Python._
+2. **O que implementei (commits / arquivos / links):** _Adicionei a verificação .isdigit() nas opções de atualização e exclusão para checar se o ID digitado é um número válido._
+3. **Objeto(s) de conhecimento mobilizado(s):** _Métodos de string (.isdigit()), conversão de tipos (int()) e condicionais de validação._
+4. **Desvio ou erro encontrado + causa técnica:** _O método .isdigit() rejeita números decimais ou negativos; ao testar com durações com ponto, gerava erro._
 5. **Decisão de ajuste + fonte:** _Defini o caso base if indice >= len(catalogo): return 0.0 e passei indice + 1 na chamada recursiva (Pense em Python, cap. 5 — Recursividade)._
-6. **Feedback recebido e o que mudei:** _O professor reforçou a importância de explicar claramente qual é o caso base durante a apresentação para provar domínio da pilha de execução._
-7. **Próximo passo:** _Preparar a arguição para a Defesa Técnica (Campo 06) e realizar a refatoração final._
+6. **Feedback recebido e o que mudei:** _O professor confirmou que validar com .isdigit() é uma alternativa simples e correta para o nível inicial sem precisar de tratamento avançado de exceções._
+7. **Próximo passo:** _Fazer a revisão final do código e limpar redundâncias.._
 
 ### 🧩 CAMPO 06 — Próximos passos para a defesa
 *AV Qualis — Grupo 3 | Individual | Quinta 26/11, 23h59*
@@ -688,13 +688,13 @@ Cada ciclo tem sua própria seção abaixo, já com o modelo. Se precisar de esp
 </details>
 
 #### Registro do Ciclo 12 — 11/11
-1. **Desafio do ciclo (em 1 frase):** _Refatorar o código final eliminando duplicações de validação e melhorando a legibilidade dos nomes de variáveis e funções._
-2. **O que implementei (commits / arquivos / links):** _Extraí a validação repetida de duração para a função auxiliar ler_duracao_valida() e padronizei as mensagens de saída._
-3. **Objeto(s) de conhecimento mobilizado(s):** _Refatoração, princípio DRY (Don't Repeat Yourself), qualidade de código e tratamento de exceções (try/except)._
-4. **Desvio ou erro encontrado + causa técnica:** _Havia código duplicado de validação de float no cadastro e na atualização, e na atualização um valor negativo era aceito sem aviso claro._
-5. **Decisão de ajuste + fonte:** _Centralizei a leitura validada de números positivos e mantive o código limpo, sem comentários óbvios (livro Código Limpo / orientações do Ciclo 12)._
-6. **Feedback recebido e o que mudei:** _Na segunda revisão por pares com a Licia Coimbra, testamos entradas vazias e letras nos campos numéricos; tudo respondeu com mensagens claras sem travar._
-7. **Próximo passo:** _Finalizar a segunda revisão por pares (Campo 05) e consolidar a evolução conceitual no Campo 07._
+1. **Desafio do ciclo (em 1 frase):** _Refatorar o código final garantindo que todas as regras de negócio do CRUD funcionem perfeitamente em um fluxo linear único._
+2. **O que implementei (commits / arquivos / links):** _Limpei o código do main.py, padronizei as mensagens de erro com emojis e revisei a lógica de busca e exclusão por índice._
+3. **Objeto(s) de conhecimento mobilizado(s):** _Listas, dicionários, laços de repetição (for, while) e refatoração de código._
+4. **Desvio ou erro encontrado + causa técnica:** _Na exclusão, apagar o item iterando diretamente na lista alterava o tamanho dela; resolvi buscando o índice exato com range(len()) primeiro._
+5. **Decisão de ajuste + fonte:** _Armazenei o índice encontrado na variável indice_remover e executei o .pop(indice_remover) apenas após o laço terminar (Pense em Python, cap. 10)._
+6. **Feedback recebido e o que mudei:** _A revisão com a dupla de colegas validou que o código está totalmente limpo, funcional e restrito aos conteúdos ensinados em sala._
+7. **Próximo passo:** _Subir a versão final para o repositório do GitHub e preparar os últimos detalhes do Logbook._
 
 ### 🧩 CAMPO 05 — Registro de Revisão por Pares (revisão nº 2)
 
